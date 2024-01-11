@@ -28,7 +28,6 @@ exec_always --no-startup-id hsetroot -solid black
 exec --no-startup-id /opt/Mullvad\ VPN/mullvad-vpn
 exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
 exec --no-startup-id firefox
-#exec --no-startup-id redshift -l 55.643392:11.215830 -m randr -t 6500:3700
 
 #Import and execute modules and configs
 exec run-parts --regex '.*sh' $HOME/.config/i3/modules/
