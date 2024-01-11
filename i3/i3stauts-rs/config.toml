@@ -1,0 +1,60 @@
+#[icons]
+#icons = "awesome4"
+#[icons.overrides]
+#bat = ["|E|", "|_|", "|=|", "|F|"]
+#bat_charging = "|^| "
+
+#[[block]]
+#block = "focused_window"
+#[block.format]
+#full = " $title.str(max_w:15) |"
+#short = " $title.str(max_w:10) |"
+
+[[block]]
+block = "cpu"
+format = "CPU $utilization $frequency"
+interval = 5
+
+#[[block]]
+#block = "disk_space"
+#path = "/"
+#info_type = "available"
+#alert_unit = "GB"
+#interval = 20
+#warning = 20.0
+#alert = 10.0
+#format = " $icon root: $available.eng(w:2) "
+
+[[block]]
+block = "memory"
+format = " $icon $mem_used_percents.eng(w:1) "
+interval = 5
+warning_mem = 80
+critical_mem = 90
+
+[[block]]
+block = "battery"
+format = " $icon $percentage"
+full_format = " $icon $percentage "
+device = "DisplayDevice"
+driver = "upower"
+missing_format = ""
+empty_format = "test"
+interval = 30
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "hueshift"
+hue_shifter = "redshift"
+step = 100
+click_temp = 3500
+
+[[block]]
+block = "time"
+interval = 1
+format = " $timestamp.datetime(f:'%A %d/%m %I:%M:%S %p') "
