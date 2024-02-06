@@ -15,6 +15,7 @@
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
   "telemetry.telemetryLevel": "off",
   "tabnine.experimentalAutoImports": true,
   "editor.cursorBlinking": "smooth",
@@ -86,11 +87,9 @@
   },
   "editor.fontFamily": "'GeistMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
   "update.mode": "default",
-  "workbench.colorTheme": "Vesper ++",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
 
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -2085,5 +2084,6 @@
     "editorGutter.commentRangeForeground": "#c5c5c5",
     "debugExceptionWidget.background": "#282633",
     "debugExceptionWidget.border": "#282633"
-  }
+  },
+  "window.zoomLevel": 1
 }
